@@ -38,3 +38,16 @@ SELECT AVG(escape_attempts) AS avg_esc_attempts, species FROM animals WHERE EXTR
 
 
 
+SELECT name FROM animals INNER JOIN owners ON owner_id = owners.id WHERE owners.full_name = 'Melody Pond';
+
+SELECT animals.name FROM animals INNER JOIN species ON species_id = species.id WHERE species.name = 'Pokemon';
+
+SELECT full_name AS owner, string_agg(name, ', ') AS animals FROM animals RIGHT JOIN owners ON owner_id = owners.id GROUP BY owner;
+
+SELECT species.name AS type, COUNT(animals.name) AS total_animals FROM animals RIGHT JOIN species ON species_id = species.id GROUP BY type;
+
+SELECT animals.name AS Jennifers_digimons FROM animals LEFT JOIN owners on owner_id = owners.id LEFT JOIN species ON species_id = species.id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
+
+SELECT name as Dean_loyal_animals FROM animals LEFT JOIN owners ON owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND escape_attempts = 0;
+
+SELECT full_name AS owner, COUNT(name) AS total_animals FROM animals RIGHT JOIN owners ON owner_id = owners.id GROUP BY owner ORDER BY total_animals DESC LIMIT 1;
