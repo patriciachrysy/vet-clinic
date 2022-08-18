@@ -1,31 +1,28 @@
-# curriculum-databases-projects-template
+# Vet Clinic database
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> This is database schema and requests for a vet clinic.
 
 
+## Requirements
+
+- `PostgreSQL` server installed and running.
+- `psql` installed
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+Follow this steps to get the requests up and running locally:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- clone repo `git clone https://github.com/patriciachrysy/vet-clinic.git`.
+- connect to postgre client: `psql`
+- copy and paste each command in the schema.sql file and hit run
+- copy and paste each command in the data.sql file and hit run
+- copy and paste each command in the queries.sql file and hit run
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Manezeu Patricia Chrystelle**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.compatriciachrysy/)
 
 ## 🤝 Contributing
 
